@@ -43,11 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game.cs" />
+    <Compile Include="Mechanics\Base\Plot.cs" />
+    <Compile Include="Mechanics\Block\PlotBlock.cs" />
+    <Compile Include="Mechanics\Base\Spell.cs" />
+    <Compile Include="Mechanics\Base\Trait.cs" />
+    <Compile Include="Mechanics\Block\SpellBlock.cs" />
+    <Compile Include="Mechanics\Base\Stat.cs" />
+    <Compile Include="Mechanics\Block\StatBlock.cs" />
+    <Compile Include="Mechanics\Block\TraitBlock.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="Screens\Formatter.cs" />
+    <Compile Include="Screens\Menus\CharacterSheet.cs" />
+    <Compile Include="Screens\Menus\Main.cs" />
+    <Compile Include="Screens\Menus\test.cs" />
+    <Compile Include="Screens\Screen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Screens\Rooms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
