@@ -15,18 +15,28 @@ namespace WHM
         public static TraitBlock traitBlock = new TraitBlock();
         public static PlotBlock plotBlock = new PlotBlock();
 
+        /// <summary>
+        /// Writes all the Players data to Player.txt
+        /// </summary>
         public static void Write()
         {
-            StreamWriter swrite = new StreamWriter("Player.txt");
+            string filePathTest = Directory.GetCurrentDirectory() + @"\Resources\";
+            Directory.CreateDirectory(filePathTest);
+            StreamWriter swrite = new StreamWriter(filePathTest + "Player.txt");
             foreach(KeyValuePair<string, Stat> entry in statBlock.attributes)
             {
                 swrite.WriteLine("[{0}]({1})", entry.Key, entry.Value.current);
             }
             swrite.Close();
         }
+        /// <summary>
+        /// Reads all the player data from Player.txt and returns a string that can be parsed for information by whatever specific parser.
+        /// </summary>
+        /// <returns></returns>
         public static string Read()
         {
-            StreamReader sread = new StreamReader("Player.txt");
+            string filePathTest = Directory.GetCurrentDirectory() + @"\Resources\";
+            StreamReader sread = new StreamReader(filePathTest + "Player.txt");
             string text = sread.ReadToEnd();
             return text;
         }
