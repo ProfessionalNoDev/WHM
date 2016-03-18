@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WHM.Mechanics.Base
+namespace WHM.Mechanics
 {
-    class Plot
+    public class Base
     {
     }
 }

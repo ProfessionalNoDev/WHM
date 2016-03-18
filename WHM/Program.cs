@@ -9,9 +9,7 @@ namespace WHM
     class Program
     {
         //The goal now is to create the player character class.
-        //Create the very first room of the boat.
-        //Have the player be able to interact with objects and stuff. 
-        //Make the screens for all this stuff.
+        //Figure out how to create inherited functionality for all the Mechanics.Base files and Mechanics.Block files.
         static void Main(string[] args)
         {
             Game.Initialize();

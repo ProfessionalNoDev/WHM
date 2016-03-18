@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WHM
+namespace WHM.Mechanics.Bases
 {
-    public class Scene
+    class Trait:Base
     {
     }
 }

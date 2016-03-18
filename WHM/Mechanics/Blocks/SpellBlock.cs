@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WHM.Mechanics.Bases;
 
-namespace WHM.Mechanics.Base
+namespace WHM.Mechanics.Blocks
 {
-    class Trait
+    class SpellBlock:Block
     {
     }
 }

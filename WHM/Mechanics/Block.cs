@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WHM.Mechanics.Base;
 
-namespace WHM.Mechanics.Block
+namespace WHM.Mechanics
 {
-    public class TraitBlock
+    public class Block
     {
     }
 }

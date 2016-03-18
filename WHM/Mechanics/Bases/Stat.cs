@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WHM.Mechanics.Base
+namespace WHM.Mechanics.Bases
 {
-    public class Stat
+    public class Stat:Base
     {
         public int rollBase;
         public int current;

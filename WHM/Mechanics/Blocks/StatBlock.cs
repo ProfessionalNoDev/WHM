@@ -3,25 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WHM.Mechanics.Base;
+using WHM.Mechanics.Bases;
 
-namespace WHM.Mechanics.Block
+namespace WHM.Mechanics.Blocks
 {
-    public class StatBlock
+    public class StatBlock:Block
     {
         public Dictionary<string, Stat> attributes = new Dictionary<string, Stat>();
-        /// <summary>
-        /// FillBlock labels all the attributes in the attributes dictionary and fills them with randomly generated stats 6d4.
-        /// </summary>
-
-        public void FillBlock()
+        public StatBlock()
         {
-            attributes.Add("AGILITY", new Stat { rollBase = 15 });
-            attributes.Add("BODY", new Stat { rollBase = 15 });
-            attributes.Add("MIND", new Stat { rollBase = 15 });
-            attributes.Add("PERCEPTION", new Stat { rollBase = 15 });
-            attributes.Add("SPIRIT", new Stat { rollBase = 15 });
-            Init();
+
         }
         private void Init()
         {

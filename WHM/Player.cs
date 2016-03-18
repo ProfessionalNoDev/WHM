@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using WHM.Mechanics.Block;
-using WHM.Mechanics.Base;
+using WHM.Mechanics.Blocks;
+using WHM.Mechanics.Bases;
 
 namespace WHM
 {
     public static class Player
     {
+        
         public static StatBlock statBlock = new StatBlock();
         public static TraitBlock traitBlock = new TraitBlock();
         public static PlotBlock plotBlock = new PlotBlock();
@@ -39,10 +40,6 @@ namespace WHM
             StreamReader sread = new StreamReader(filePathTest + "Player.txt");
             string text = sread.ReadToEnd();
             return text;
-        }
-        public static void TestInit()
-        {
-            statBlock.FillBlock();
         }
     }
 }
