@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WHM.Mechanics.Bases
+namespace WHM.Screens.TestScreens
 {
-    class Plot:Base
+    class TestCombat : Screen
     {
     }
 }

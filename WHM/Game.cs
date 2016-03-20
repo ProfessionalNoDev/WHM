@@ -31,7 +31,7 @@ namespace WHM
             Console.SetWindowSize(200, 60);
             Console.Title = "White Howl Mountain";
             //Class Initialization
-            scrn = new Screens.Menus.Main();
+            scrn = new Screens.Menus.Title();
             //Loop Initialization
             Loop();
         }

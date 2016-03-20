@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WHM.Mechanics.Bases;
 
-namespace WHM.Mechanics.Blocks
+namespace WHM.Screens.TestScreens
 {
-    public class PlotBlock:Block
+    class TestDialogue : Screen
     {
     }
 }

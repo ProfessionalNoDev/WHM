@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WHM.Mechanics.Bases
+namespace WHM.Screens.TestScreens
 {
-    class Spell:Base
+    class TestDungeon : Screen
     {
     }
 }

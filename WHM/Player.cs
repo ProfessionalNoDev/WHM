@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using WHM.Mechanics.Blocks;
-using WHM.Mechanics.Bases;
+using WHM.BaseClasses;
 
 namespace WHM
 {
     public static class Player
     {
-        
-        public static StatBlock statBlock = new StatBlock();
-        public static TraitBlock traitBlock = new TraitBlock();
-        public static PlotBlock plotBlock = new PlotBlock();
+        //The statblock is a set of enums that describe the physical attributes of a characters body.
+        public static StatBlock statBlock = new StatBlocks.Humans.PlayerDefault();
 
+        //List of species that would find the thing attractive
+        //List of cultures that would find the thing sociable
+
+        //These are simply the names of advantages and disadvantages. The list is checked by other classes to look for relevant traits.
+        public static List<string> traits = new List<string>();
         /// <summary>
         /// Writes all the Players data to Player.txt
         /// </summary>
@@ -24,10 +26,6 @@ namespace WHM
             string filePathTest = Directory.GetCurrentDirectory() + @"\Resources\";
             Directory.CreateDirectory(filePathTest);
             StreamWriter swrite = new StreamWriter(filePathTest + "Player.txt");
-            foreach(KeyValuePair<string, Stat> entry in statBlock.attributes)
-            {
-                swrite.WriteLine("[{0}]({1})", entry.Key, entry.Value.current);
-            }
             swrite.Close();
         }
         /// <summary>
